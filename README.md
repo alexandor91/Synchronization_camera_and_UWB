@@ -52,3 +52,9 @@ cd /*/catkin_ws/src/filter_synchronizer1/src/, in synchronizer1.cpp "recording_i
 2. cd /*/catkin_ws/src/right_image_data/, the right images are stored here
 3. cd /*/catkin_ws/src/distance_data/, the distances are stored in the range.txt file
 4. cd /*/catkin_ws/src/time_stamp/, the timestamps are stored in the time_stamp.txt file
+---
+Demo
+---
+![demo of the system](perception_and_wodstation.jpg)
+<br />&emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;&emsp; &emsp;  &emsp;  &emsp;Overall nodes flow<br />
+

@@ -1,14 +1,14 @@
-=====================
+===
 Hardware requirements
-=====================
+====
 1. Bumblebee2 BB2-08S2C
 via FireWire-1394 standard
 2. Decawave range finder with one anchor and onr tag
 via SerialPort
 
-========
+===
 Compile
-========
+===
 1. cd catkin_ws
 2. delete build, devel
 3. Change all the absolute pathes within the source code according to your local path: /*/catkin_ws/src/filter_synchronizer1/src/synchronizer1.cpp
@@ -19,9 +19,9 @@ Compile
    cd /*/catkin_ws/src/right_image_data/ 
    empty the folder manually
 
-========
+===
 Set-Up
-========
+===
 7. cd catkin_ws/devel
 8. source setup.bash
 9. sudo chmod 666 /dev/ttyACM*: the enumeration should be the same as it is displayed.

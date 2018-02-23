@@ -1,16 +1,16 @@
 # Synchronization_camera_and_UWB
 This project is established for my assistant work  at TUM Navigation Lab, based on camera and UWB preception
-===
+---
 Hardware requirements
-====
+---
 1. Bumblebee2 BB2-08S2C
 via FireWire-1394 standard
 2. Decawave range finder with one anchor and onr tag
 via SerialPort
 
-===
+---
 Compile
-===
+---
 1. cd catkin_ws
 2. delete build, devel
 3. Change all the absolute pathes within the source code according to your local path: /*/catkin_ws/src/filter_synchronizer1/src/synchronizer1.cpp
@@ -21,9 +21,9 @@ Compile
    cd /*/catkin_ws/src/right_image_data/ 
    empty the folder manually
 
-===
+---
 Set-Up
-===
+---
 7. cd catkin_ws/devel
 8. source setup.bash
 9. sudo chmod 666 /dev/ttyACM*: the enumeration should be the same as it is displayed.
@@ -36,15 +36,15 @@ self.dwPort = rospy.get_param('~port','dev/ttyACM0') in catkin_ws/src/decawave_d
 or 
 ./run.sh
 
-===
+---
 Denotation
-===
+---
 1. On Terminal1 the "image 0" corresponding to left camera image, "image 1" to right camera image, followed by the counter for the image pair, and absolute ros time, in between there would be "UW time" referred to the data from range finder followed by ros time and distance in m.
 2. On Terminal2, "Ranging measurement [m]"should be printed out.
 
-===
+---
 Storage
-===
+---
 ######Note the storing rate could be set:
 cd /*/catkin_ws/src/filter_synchronizer1/src/, in synchronizer1.cpp "recording_image_rate" default as 2, which means the storage is implemented once every two images. Change it accordingly to  your application.
 
@@ -55,6 +55,10 @@ cd /*/catkin_ws/src/filter_synchronizer1/src/, in synchronizer1.cpp "recording_i
 ---
 Demo
 ---
-![demo of the system](perception_and_wodstation.jpg)
-<br />&emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;&emsp; &emsp;  &emsp;  &emsp;Overall nodes flow<br />
+![demo of the system](perception.jpg)
+<br />&emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;&emsp; &emsp;  &emsp;  &emsp;the whole perception system<br />
+The perception includes include the stereo camera and UWB,  UWB is composed of one anchor and one target, the perption part are connected to the laptop via cables
+![workstation](workstation.jpg)
+<br />&emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;&emsp; &emsp;  &emsp;  &emsp;workstation<br />
+The laptop can see the calibrated the images from left and right cameras, the distance measurements are printed in a terminal,  all the measurements are matched at laptop  according to the sampling time stamps, the storage rate can be changed. 
 

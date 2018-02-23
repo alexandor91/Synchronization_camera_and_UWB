@@ -55,10 +55,10 @@ cd /*/catkin_ws/src/filter_synchronizer1/src/, in synchronizer1.cpp "recording_i
 ---
 Demo
 ---
-![demo of the system](perception.jpg)
+![demo of the system](perception.PNG)
 <br />&emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;&emsp; &emsp;  &emsp;  &emsp;the whole perception system<br />
 The perception includes include the stereo camera and UWB,  UWB is composed of one anchor and one target, the perption part are connected to the laptop via cables
-![workstation](workstation.jpg)
+![workstation](workstation.PNG)
 <br />&emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp; &emsp; &emsp;  &emsp;  &emsp;&emsp; &emsp;  &emsp;  &emsp;workstation<br />
 The laptop can see the calibrated the images from left and right cameras, the distance measurements are printed in a terminal,  all the measurements are matched at laptop  according to the sampling time stamps, the storage rate can be changed. 
 

@@ -34,15 +34,15 @@ self.dwPort = rospy.get_param('~port','dev/ttyACM0') in catkin_ws/src/decawave_d
 or 
 ./run.sh
 
-========
+===
 Denotation
-========
+===
 1. On Terminal1 the "image 0" corresponding to left camera image, "image 1" to right camera image, followed by the counter for the image pair, and absolute ros time, in between there would be "UW time" referred to the data from range finder followed by ros time and distance in m.
 2. On Terminal2, "Ranging measurement [m]"should be printed out.
 
-========
+===
 Storage
-========
+===
 ######Note the storing rate could be set:
 cd /*/catkin_ws/src/filter_synchronizer1/src/, in synchronizer1.cpp "recording_image_rate" default as 2, which means the storage is implemented once every two images. Change it accordingly to  your application.
 
